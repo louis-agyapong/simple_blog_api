@@ -1,3 +1,3 @@
-# Django Project Template
+# A simple blog API with Django
 
-Django project template
+A simple blog API
