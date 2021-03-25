@@ -1,0 +1,47 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#351e61",
+        "activityBar.activeBorder": "#92502d",
+        "activityBar.background": "#351e61",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#92502d",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#20123a",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#351e61",
+        "titleBar.activeBackground": "#20123a",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#20123a99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#20123a",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.sortImports.args": [
+        "--profile=black",
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length=119"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.linting.mypyEnabled": false,
+    // Django extension
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "python.linting.flake8Args": [
+        "--max-line-length=119"
+    ],
+}
