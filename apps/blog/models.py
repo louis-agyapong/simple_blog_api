@@ -30,7 +30,7 @@ class Post(models.Model):
     content = models.TextField(_("content"))
     slug = models.SlugField(_("slug"), max_length=250, unique_for_date="published")
     published = models.DateTimeField(_("published"), default=timezone.now)
-    author = models.ForeignKey(User, verbose_name=_("author"), on_delete=models.CASCADE, related_name="posts")
+    author = models.ForeignKey(User, verbose_name=_("author"), on_delete=models.CASCADE, related_name="blog_posts")
     status = models.CharField(_("status"), max_length=9, choices=options, default="published")
 
     class Meta:
